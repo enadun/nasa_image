@@ -1,16 +1,23 @@
 # nasa_images
 
-A new Flutter project.
+A Flutter project to demostrate the fetching data from the nasa api.
+
+![ezgif-3-95047899e1](https://github.com/enadun/nasa_image/assets/4685388/b79ea651-8dc3-4375-ae53-3d5dd0353003)
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+First of all get an api_key from [NASA API.](https://api.nasa.gov/)
+Then crate a `.env` file in the root of the project and add your api_key there.
 
-A few resources to get you started if this is your first Flutter project:
+`API_KEY = 'your_api_key'`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot of adding .env file](https://github.com/enadun/nasa_image/assets/4685388/851b93b1-2101-4520-b485-8b8186f2d909)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Then create a new project on [Firbase](https://console.firebase.google.com/) and enable the [Annonymously loging](https://firebase.google.com/docs/auth/flutter/anonymous-auth) feature.
+
+Make sure to put the `google-services.json` file in [Android](https://firebase.google.com/docs/android/setup#add-config-file) project and `GoogleService-Info.plist` in [iOS](https://firebase.google.com/docs/ios/setup#add-config-file) project.
+
+![Screenshot of adding GoogleService-Info.plist file](https://github.com/enadun/nasa_image/assets/4685388/8dc386e0-746f-4353-9ab0-efac6cc643a0)
+
+Than go the root of flutter project in terminal and run the `flutter run` command.
